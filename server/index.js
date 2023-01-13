@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // connect to mongodb
-mongoose.connect('mongodb://127.0.0.1/ourdata');
+mongoose.connect('mongodb+srv://admin:123@cluster0.t2uiiji.mongodb.net/test');
 mongoose.Promise = global.Promise;
 
 app.use(express.static('public'));
@@ -21,7 +21,7 @@ app.use(function(err,req,res,next){
 });
 
 // listen for requests
-app.listen(process.env.port || 4000, function(){
+app.listen(process.env.port || 3000, function(){
     console.log('Ready to Go!');
 });
 
