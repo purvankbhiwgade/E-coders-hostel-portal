@@ -1,9 +1,11 @@
 import ApplicationForm from "./components/ApplicationForm";
 import "./App.css";
+import InfoCollectForm from "./components/InfoCollectForm";
 
 function App() {
   return (
-    <ApplicationForm />
+    // <ApplicationForm />
+    <InfoCollectForm />
   );
 }
 
