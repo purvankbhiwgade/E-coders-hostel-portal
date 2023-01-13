@@ -5,7 +5,7 @@ const Student = require('../models/student');
 // get a list of students from the database
 router.get('/students',function(req,res,next){
     Student.find({}).then(function(students){
-        res.send(students);
+        res.send("student return");
     }).catch(next);
 });
 
