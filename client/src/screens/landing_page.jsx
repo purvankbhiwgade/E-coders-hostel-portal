@@ -4,6 +4,7 @@ import Body from "../Components/Body.jsx";
 import Footer from "../Components/Footer.jsx";
 import '../App.css';
 
+
 function Landing_page() {
   return (
     <div>
