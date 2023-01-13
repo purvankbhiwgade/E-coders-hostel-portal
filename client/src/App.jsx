@@ -1,3 +1,4 @@
+import ApplicationForm from "./components/ApplicationForm";
 import "./App.css";
 import Landing_page from "./screens/landing_page";
 
