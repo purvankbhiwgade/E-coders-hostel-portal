@@ -8,7 +8,7 @@ function Landing_page() {
     <div
       style={{ height: "100%", display: "flex", "flex-direction": "column" }}
     >
-      <Header />
+      
       <Body />
       <Footer />
     </div>
