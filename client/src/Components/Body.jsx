@@ -12,7 +12,7 @@ const router = createBrowserRouter([
 const myStyle = {
   backgroundImage:
     "url('https://vjti.ac.in/wp-content/uploads/2021/07/VJTI-LandingPageV3.jpg')",
-  height: "83vh",
+  height: "100%",
   marginTop: "-15px",
   fontSize: "80px",
   backgroundSize: "cover",
@@ -23,17 +23,22 @@ const myStyle = {
 
 function Body() {
   return (
-    <div>
+    <>
       <div style={myStyle} className="backGroundImage">
         <h1
           className="pt-32 uppercase font-extrabold h-full"
-          style={{"background-color": "#00000094" }}
+          style={{ "background-color": "#00000094" }}
         >
           <AnimatedText text="Welcome to VJTI Hostel!" />
         </h1>
       </div>
-      <div className="content bg-slate-200" style={{'width': 'min(500px, 90%)'}}>
-        <h1 className="text-2xl px-4 py-2 border-b border-black/50 w-full uppercase font-semibold">Notice</h1>
+      <div
+        className="content bg-slate-200"
+        style={{ width: "min(500px, 90%)" }}
+      >
+        <h1 className="text-2xl px-4 py-2 border-b border-black/50 w-full uppercase font-semibold">
+          Notice
+        </h1>
         <ul className="links px-4 py-2 gap-2 flex flex-col">
           <li className="hover:underline hover:text-blue-600 transition duration-100">
             <a href="https://vjti.ac.in/wp-content/uploads/2023/01/230109_Modified_VJTI-Hostels-Admission-against-Vacant-Seats-1.pdf">
@@ -52,7 +57,7 @@ function Body() {
           </li>
         </ul>
       </div>
-    </div>
+    </>
   );
 }
 
