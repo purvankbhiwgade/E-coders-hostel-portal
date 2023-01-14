@@ -1,5 +1,5 @@
 
-import Header from "../components/Header"
+// import Header from "../components/Header"
 import GrievanceForm from "../components/GrievanceForm";
 import Footer from "../components/Footer";
 import '../App.css';
@@ -8,7 +8,7 @@ import '../App.css';
 function GrievancePage() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <GrievanceForm />
       <Footer />
     </div>

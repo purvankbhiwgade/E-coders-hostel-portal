@@ -1,5 +1,5 @@
 
-import Header from "../components/Header"
+// import Header from "../components/Header"
 import ApplicationForm from "../components/ApplicationForm";
 import Footer from "../components/Footer";
 import '../App.css';
@@ -8,7 +8,7 @@ import '../App.css';
 function FYApplicationForm() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <ApplicationForm />
       <Footer />
     </div>
