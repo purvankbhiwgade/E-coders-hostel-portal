@@ -1,5 +1,5 @@
-// import Header from "../components/Header";
-import Body from "../components/Body";
+import Header from "../components/Header";
+import Body from "../components/Body"
 import Footer from "../components/Footer";
 import "../App.css";
 
@@ -8,7 +8,7 @@ function LandingPage() {
     <div
       style={{ height: "100%", display: "flex", "flex-direction": "column" }}
     >
-      {/* <Header /> */}
+      <Header />
       <Body />
       <Footer />
     </div>

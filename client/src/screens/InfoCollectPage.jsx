@@ -1,4 +1,4 @@
-// import Header from "../components/Header"
+import Header from "../components/Header"
 import InfoCollectForm from "../components/InfoCollectForm";
 import Footer from "../components/Footer";
 import '../App.css';
@@ -7,7 +7,7 @@ import '../App.css';
 function InfoCollectPage() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <InfoCollectForm />
       <Footer />
     </div>

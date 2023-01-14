@@ -3,12 +3,12 @@ import "../App.css";
 import AnimatedText from "../Components/AnimatedText";
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div>Hello world!</div>,
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <div>Hello world!</div>,
+//   },
+// ]);
 const myStyle = {
   backgroundImage:
     "url('https://vjti.ac.in/wp-content/uploads/2021/07/VJTI-LandingPageV3.jpg')",
