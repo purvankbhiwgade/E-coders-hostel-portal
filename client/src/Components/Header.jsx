@@ -18,7 +18,7 @@ import '../App.css'
 //     )
 // }
 // export default Header;
-  
+
 import React from "react";
 import VJTILogo from "../image/VJTI-Logo.png"
 
@@ -50,7 +50,7 @@ export default function Navbar({ fixed }) {
               
               <li className="nav-item">
                 <a className="px-3 py-2 text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo" >
+                  href="" >
                   <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About Us</span>
                 </a>
               </li>

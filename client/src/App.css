@@ -29,9 +29,10 @@
   left: 20%;
   right:20%;
   height: auto;
-  border: solid black 5px;
+  border: solid black 2px;
   background-color: blanchedalmond;
   opacity: 80%;
+  border-radius: 5px;
 }
 
 .testBackground{
@@ -41,5 +42,9 @@
   min-width: calc(100% + 1px);
   min-height: calc(100% + 1px);
 
+}
+
+.links{
+  align-items: left;
 }
 

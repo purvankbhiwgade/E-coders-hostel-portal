@@ -1,6 +1,7 @@
 import React from "react"
 import '../App.css'
 import Typical from 'react-typical'
+import AnimatedText from "../Components/AnimatedText";
 import {
     createBrowserRouter,
     Link,
@@ -21,6 +22,10 @@ const myStyle={
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     color: 'white',
+    // backgroundColor: "#000",
+    // boxShadow: "inset 0 0 0 1000px rgba(133,133,133,.5')",
+//   border: 1px solid black;
+  opacity: '1',
 
 };
 
@@ -30,23 +35,28 @@ function Body(){
         <div>
             {/* <p>This is the body and router test</p> */}
             <div style={myStyle} className="backGroundImage">
-            <br/>
+            {/* <br/>
             <h1><Typical
                 steps={['Welcome to VJTI!', 1000]}
                 loop={10}
                 wrapper="b"
             />        
-            </h1>
+            </h1> */}
+            <h1 className="pt-48 "><AnimatedText text="Welcome to VJTI Hostel!"/></h1>
             </div>
-            <div class = "content">
-                Hostel Notice
-                <ul>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, iusto! Reprehenderit molestiae iste cupiditate, maxime expedita labore sequi mollitia enim quisquam, ut sint quaerat inventore, suscipit error voluptatum optio culpa!</li>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, dicta facere. Quis dicta, aut, similique fugit vel temporibus impedit et culpa harum dolores mollitia veniam, natus animi cumque? Rerum, beatae.</li>
+            <div className= "content pd-4">
+                <h1 className="text-2xl">Hostel Notice</h1>
+                <ul className="links">
+                    <li><a href ="https://vjti.ac.in/wp-content/uploads/2023/01/230109_Modified_VJTI-Hostels-Admission-against-Vacant-Seats-1.pdf">Notice for VJTI Hostel Admission against vacant seats</a></li>
+                    <li><a href ="https://vjti.ac.in/wp-content/uploads/2023/01/230109_Modified_VJTI-Hostels-Admission-against-Vacant-Seats-1.pdf">Hostel allotment against Vacant Seats FY. B.Tech AY2022-23</a></li>
+                    <li><a href ="https://vjti.ac.in/wp-content/uploads/2022/11/221123_DSY-Degree-Hostel-Allotment-AY-2022-23.pdf"> VJTI Hostel Merit List- DSY Degree – AY 2022-23</a></li>
+                    <li href =""></li>
+                    <li href =""></li>
+                    <li href =""></li>
+
                 </ul>
             </div>
 
-            <img class = "testBackground" src = "https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png"/>
         </div>
     )
 }

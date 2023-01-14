@@ -11,6 +11,7 @@ function Landing_page() {
       <Header />
       <Body />
       <Footer />
+      
     </div>
   );
 }
