@@ -98,7 +98,6 @@ export default function InfoCollectForm() {
           // set the error state empty or remove the error for username input
 
           //omit function removes/omits the value from given object and returns a new object
-          // let newObj = omit(errors, "fullName");
           const { fullName, ...newObj } = errors;
           setErrors(newObj);
         }
@@ -130,7 +129,6 @@ export default function InfoCollectForm() {
           // set the error state empty or remove the error for username input
 
           //omit function removes/omits the value from given object and returns a new object
-          // let newObj = omit(errors, "fullName");
           const { lastName, ...newObj } = errors;
           setErrors(newObj);
         }
@@ -259,11 +257,6 @@ export default function InfoCollectForm() {
               name="emailID"
               placeholder="abc@orgName.com"
             />
-            {/* {errors.emailID !== "" && (
-              <span className="text-red-500 text-xs italic">
-                {errors.emailID}
-              </span>
-            )} */}
           </div>
         </div>
         {/* Hostel Fee Receipt */}
@@ -313,10 +306,10 @@ export default function InfoCollectForm() {
               className="block mb-2 text-sm font-medium text-gray-900 border-none"
               htmlFor="file_input"
             >
-           Allotment
+              Allotment
             </label>
             <input
-              className="block h-12 flex justify-center align-center w-full text-sm text-gray-900 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+              className="block h-12 justify-center align-center w-full text-sm text-gray-900 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
               id="file_input"
               type="file"
               name="aadharCard"
@@ -329,11 +322,6 @@ export default function InfoCollectForm() {
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
-          // onSubmit={(event) => {
-          //   event.preventDefault();
-          //   console.log("hi ");
-          //   handleSubmit(event);
-          // }}
         >
           Submit
         </button>

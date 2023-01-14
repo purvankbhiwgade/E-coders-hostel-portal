@@ -1,9 +1,7 @@
-
-import Header from "../Components/Header.jsx"
+import Header from "../Components/Header.jsx";
 import Body from "../Components/Body.jsx";
 import Footer from "../Components/Footer.jsx";
-import '../App.css';
-
+import "../App.css";
 
 function Landing_page() {
   return (
@@ -11,7 +9,6 @@ function Landing_page() {
       <Header />
       <Body />
       <Footer />
-      
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 export default function GrievanceForm() {
-    function containsOnlyNumbers(str) {
-        return /^\d+$/.test(str);
-      }
+  function containsOnlyNumbers(str) {
+    return /^\d+$/.test(str);
+  }
   const handleChange = (event) => {
     //To stop default events
     event.persist();
@@ -68,7 +68,6 @@ export default function GrievanceForm() {
           // set the error state empty or remove the error for username input
 
           //omit function removes/omits the value from given object and returns a new object
-          // let newObj = omit(errors, "studentName");
           const { studentName, ...newObj } = errors;
           setErrors(newObj);
         }
@@ -105,7 +104,6 @@ export default function GrievanceForm() {
           // set the error state empty or remove the error for username input
 
           //omit function removes/omits the value from given object and returns a new object
-          // let newObj = omit(errors, "studentName");
           const { lastName, ...newObj } = errors;
           setErrors(newObj);
         }
@@ -122,7 +120,6 @@ export default function GrievanceForm() {
           // set the error state empty or remove the error for username input
 
           //omit function removes/omits the value from given object and returns a new object
-          // let newObj = omit(errors, "studentName");
           const { lastName, ...newObj } = errors;
           setErrors(newObj);
         }
@@ -134,7 +131,10 @@ export default function GrievanceForm() {
 
   return (
     <div className="container mx-auto w-{1/2} max-w-lg px-4 mt-12">
-      <form className="w-full max-w-lg bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={onSubmit}>
+      <form
+        className="w-full max-w-lg bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        onSubmit={onSubmit}
+      >
         {/* Student Name & Room number*/}
         <div className="flex flex-wrap -mx-3 mb-2">
           <div className="w-3/4 px-3 mb-2 md:mb-0">
@@ -153,9 +153,6 @@ export default function GrievanceForm() {
               onChange={handleChange}
               value={values.studentName}
             />
-            {/* <p className="text-red-500 text-xs italic">
-              Please fill out this field.
-            </p> */}
           </div>
           <div className="w-1/4 px-3 mb-2 md:mb-0">
             <label
@@ -234,19 +231,11 @@ export default function GrievanceForm() {
               onChange={handleChange}
               value={values.description}
             />
-            {/* <p className="text-red-500 text-xs italic">
-              Please fill out this field.
-            </p> */}
           </div>
         </div>
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
-          // onSubmit={(event) => {
-          //   event.preventDefault();
-          //   console.log("hi ");
-          //   handleSubmit(event);
-          // }}
         >
           Sign In
         </button>
