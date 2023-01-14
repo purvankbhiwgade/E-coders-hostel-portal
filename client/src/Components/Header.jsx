@@ -1,9 +1,6 @@
 import "../App.css";
 
-import React from "react";
-
-export default function Header() {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+function Header() {
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-900 mb-3">
@@ -23,8 +20,7 @@ export default function Header() {
           </div>
           <div
             className={
-              "w-1/2 lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
+              "w-1/2 lg:flex flex-grow items-center flex"
             }
             id="example-navbar-danger"
           >
@@ -64,3 +60,5 @@ export default function Header() {
     </>
   );
 }
+
+export default Header;
