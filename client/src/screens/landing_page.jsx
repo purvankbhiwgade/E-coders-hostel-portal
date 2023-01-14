@@ -1,6 +1,6 @@
-import Header from "../Components/Header.jsx";
-import Body from "../Components/Body.jsx";
-import Footer from "../Components/Footer.jsx";
+import Header from "../components/Header.jsx";
+import Body from "../components/Body.jsx";
+import Footer from "../components/Footer.jsx";
 import "../App.css";
 
 function Landing_page() {

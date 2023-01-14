@@ -1,7 +1,7 @@
 
-import Header from "../Components/Header.jsx"
-import GrievanceForm from "../Components/GrievanceForm.jsx";
-import Footer from "../Components/Footer.jsx";
+import Header from "../components/Header.jsx"
+import GrievanceForm from "../components/GrievanceForm.jsx";
+import Footer from "../components/Footer.jsx";
 import '../App.css';
 
 
