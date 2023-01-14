@@ -33,7 +33,8 @@ function Body(){
     return (
         <div>
             <div style={myStyle} className="backGroundImage">
-            <h1 className="pt-48 "><AnimatedText text="Welcome to VJTI Hostel!"/></h1>
+             
+            <h1 className="pt-48" style={{'height': '100vh', 'background-color': "#00000094"}} ><AnimatedText text="Welcome to VJTI Hostel!"/></h1>
             </div>
             <div className= "content pd-4">
                 <h1 className="text-2xl">Hostel Notice</h1>
