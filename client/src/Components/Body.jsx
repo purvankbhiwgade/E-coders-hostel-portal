@@ -33,10 +33,30 @@ function Body() {
         </h1>
       </div>
       <div
-        className="content bg-slate-200"
+        className="content bg-slate-200 gap-8"
         style={{ width: "min(500px, 90%)" }}
       >
-        <h1 className="text-2xl px-4 py-2 border-b border-black/50 w-full uppercase font-semibold">
+        <div><h1 className="text-2xl px-4 py-2 border-b border-black/50 w-full uppercase font-semibold">
+          Apply
+        </h1>
+        <ul className="links px-4 py-2 gap-2 flex flex-col">
+          <li className="hover:underline hover:text-blue-600 transition duration-100">
+            <Link to="/apply">
+              Application to First Year Hostel Allotment Form
+            </Link>
+          </li>
+          <li className="hover:underline hover:text-blue-600 transition duration-100">
+            <Link to="/info">
+              Hostel Admission Form for New Allotments
+            </Link>
+          </li>
+          <li className="hover:underline hover:text-blue-600 transition duration-100">
+            <Link to="/query">
+              Grievance Form
+            </Link>
+          </li>
+        </ul></div>
+        <div><h1 className="text-2xl px-4 py-2 border-b border-black/50 w-full uppercase font-semibold">
           Notice
         </h1>
         <ul className="links px-4 py-2 gap-2 flex flex-col">
@@ -55,7 +75,7 @@ function Body() {
               VJTI Hostel Merit List- DSY Degree – AY 2022-23
             </a>
           </li>
-        </ul>
+        </ul></div>
       </div>
     </>
   );
