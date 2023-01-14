@@ -1,6 +1,5 @@
 import React from "react"
 import '../App.css'
-import Typical from 'react-typical'
 import AnimatedText from "../Components/AnimatedText";
 import {
     createBrowserRouter,
@@ -33,15 +32,7 @@ const myStyle={
 function Body(){
     return (
         <div>
-            {/* <p>This is the body and router test</p> */}
             <div style={myStyle} className="backGroundImage">
-            {/* <br/>
-            <h1><Typical
-                steps={['Welcome to VJTI!', 1000]}
-                loop={10}
-                wrapper="b"
-            />        
-            </h1> */}
             <h1 className="pt-48 "><AnimatedText text="Welcome to VJTI Hostel!"/></h1>
             </div>
             <div className= "content pd-4">
