@@ -1,7 +1,7 @@
 
-import Header from "../components/Header.jsx"
-import ApplicationForm from "../components/ApplicationForm.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../components/Header"
+import ApplicationForm from "../components/ApplicationForm";
+import Footer from "../components/Footer";
 import '../App.css';
 
 

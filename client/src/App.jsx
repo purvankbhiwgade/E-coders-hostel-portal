@@ -1,6 +1,6 @@
 import "./App.css";
 import Landing_page from "./screens/landing_page";
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import FYApplicationForm from "./screens/FYApplicationForm";
 import GrievancePage from "./screens/GrievancePage"
 import InfoCollectPage from "./screens/InfoCollectPage";

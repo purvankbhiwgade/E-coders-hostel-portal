@@ -1,6 +1,6 @@
-import Header from "../components/Header.jsx"
-import InfoCollectForm from "../components/InfoCollectForm.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../components/Header"
+import InfoCollectForm from "../components/InfoCollectForm";
+import Footer from "../components/Footer";
 import '../App.css';
 
 
