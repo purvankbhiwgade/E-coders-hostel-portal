@@ -1,30 +1,19 @@
 import React from "react";
 
-export default function Modal({data, handleClose}) {
-    console.log("inside Modal")
-    console.log(data)
+export default function Modal({ data, handleClose }) {
+  console.log("inside Modal");
+  console.log(data);
   return (
     <>
-      {/* <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-        type="button"
-        onClick={() => setShowModal(true)}
-      >
-        Open regular modal
-      </button> */}
-     {data.name!==undefined?
+      {data.name !== undefined ? (
         <>
-          <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 pl-2 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-xl text-gray-500">
-                    {data.name}
-                  </h3>
+                  <h3 className="text-xl text-gray-500">{data.name}</h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => handleClose()}
@@ -36,13 +25,12 @@ export default function Modal({data, handleClose}) {
                 </div>
                 {/*body*/}
                 <div className="relative p-2 flex-auto">
-                <p className="my-4 text-slate-500 text-lg leading-relaxed">
+                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
                     {data.subject}
                   </p>
-                  
                 </div>
                 <div className="flex-auto">
-                <p className="my-4 text-slate-500 text-lg leading-relaxed">
+                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
                     {data.description}
                   </p>
                 </div>
@@ -60,8 +48,8 @@ export default function Modal({data, handleClose}) {
             </div>
           </div>
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-        </>:null}
-      
+        </>
+      ) : null}
     </>
   );
 }

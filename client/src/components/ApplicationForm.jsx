@@ -50,8 +50,8 @@ export default function ApplicationForm() {
     console.log("Callback function when form is submitted!");
     console.log("Form Values ", values);
   };
+
   //Custom hook call
-  // const { handleChange, values, errors, handleFormSubmit } = useForm(formLogin);
   const allStates = (
     <select
       className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -130,18 +130,21 @@ export default function ApplicationForm() {
     console.log("handleFormSubmit");
     if (event) event.preventDefault();
     console.log(errors, values);
-    if (JSON.stringify(values) === JSON.stringify({
-      firstName: "",
-      lastName: "",
-      emailID: "",
-      phoneNumber: "",
-      category: "",
-      city: "",
-      state: "",
-      regID: "",
-      branch: "",
-      meritRank: "",
-    })) {
+    if (
+      JSON.stringify(values) ===
+      JSON.stringify({
+        firstName: "",
+        lastName: "",
+        emailID: "",
+        phoneNumber: "",
+        category: "",
+        city: "",
+        state: "",
+        regID: "",
+        branch: "",
+        meritRank: "",
+      })
+    ) {
       formLogin();
     } else {
       alert("There is an Error!");
@@ -186,9 +189,6 @@ export default function ApplicationForm() {
           });
         } else {
           // set the error state empty or remove the error for username input
-
-          //omit function removes/omits the value from given object and returns a new object
-          // let newObj = omit(errors, "firstName");
           const { firstName, ...newObj } = errors;
           setErrors(newObj);
         }
@@ -220,7 +220,6 @@ export default function ApplicationForm() {
           // set the error state empty or remove the error for username input
 
           //omit function removes/omits the value from given object and returns a new object
-          // let newObj = omit(errors, "firstName");
           const { lastName, ...newObj } = errors;
           setErrors(newObj);
         }
@@ -314,9 +313,6 @@ export default function ApplicationForm() {
               onChange={handleChange}
               value={values.firstName}
             />
-            {/* <p className="text-red-500 text-xs italic">
-              Please fill out this field.
-            </p> */}
           </div>
           <div className="w-full md:w-1/2 px-3">
             <label
@@ -515,11 +511,6 @@ export default function ApplicationForm() {
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
-          // onSubmit={(event) => {
-          //   event.preventDefault();
-          //   console.log("hi ");
-          //   handleSubmit(event);
-          // }}
         >
           Sign In
         </button>

@@ -25,12 +25,9 @@ function AnimatedText({ text }) {
   }, [text]);
 
   return (
-    <div className="text-6xl font-medium">
+    <div className="text-5xl">
       {displayedText.split("").map((letter, index) => (
-        <span
-          key={index}
-          className="animate-pulse duration-200"
-        >
+        <span key={index} className="animate-pulse duration-200">
           {letter}
         </span>
       ))}

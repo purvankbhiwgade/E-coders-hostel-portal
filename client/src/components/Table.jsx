@@ -61,11 +61,11 @@ const Table = () => {
       description: "Working",
     },
     {
-        id: 2,
-        name: "damn,son",
-        subject: "who stole your bucket",
-        description: "Working",
-      },
+      id: 2,
+      name: "damn,son",
+      subject: "who stole your bucket",
+      description: "Working",
+    },
   ];
   console.log(data, "data");
 
@@ -87,10 +87,10 @@ const Table = () => {
   }, [showData]);
 
   const handleClose = () => {
-    setShowData({})
-    console.log('handling close')
-    setShowModal(false)
-  }
+    setShowData({});
+    console.log("handling close");
+    setShowModal(false);
+  };
 
   return (
     <>
@@ -115,7 +115,11 @@ const Table = () => {
           {data.map((item) => {
             if (item !== undefined) {
               return (
-                <TableRow key={item.id} incomingData={item} renderModal={renderModal} />
+                <TableRow
+                  key={item.id}
+                  incomingData={item}
+                  renderModal={renderModal}
+                />
               );
             }
           })}

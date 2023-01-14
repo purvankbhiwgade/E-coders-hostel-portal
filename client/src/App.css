@@ -1,50 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");
 #root {
   margin: 0;
   padding: 0rem;
   text-align: center;
   /* font-family: 'Source Code Pro', monospace; */
-
 }
 
-.body{
-  font-family: 'Source Code Pro', monospace;
+.body {
+  font-family: "Source Code Pro", monospace;
 }
 
-.vjti-logo{
+.vjti-logo {
   margin: 0;
   padding: 0;
 }
 
-.heading-1{
+.heading-1 {
   font-size: 4rem;
   color: white;
   align-self: center;
 }
 
-.content{
+.content {
   position: absolute;
   align-items: center;
   top: 50%;
-  left: 20%;
-  right:20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: auto;
-  border: solid black 2px;
-  background-color: blanchedalmond;
-  opacity: 80%;
+  border: solid black 1px;
+  opacity: 70%;
   border-radius: 5px;
 }
 
-.testBackground{
-  position:fixed;
+.testBackground {
+  position: fixed;
   width: auto;
   height: auto;
   min-width: calc(100% + 1px);
   min-height: calc(100% + 1px);
-
 }
 
-.links{
+.links {
   align-items: left;
 }
-
