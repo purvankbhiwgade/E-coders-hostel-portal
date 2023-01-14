@@ -20,7 +20,6 @@ import '../App.css'
 // export default Header;
 
 import React from "react";
-import VJTILogo from "../image/VJTI-Logo.png"
 
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
