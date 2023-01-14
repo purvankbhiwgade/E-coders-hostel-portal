@@ -13,7 +13,7 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href=""
                 >
                   <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 text-2xl">Hostel VJTI</span>
@@ -32,7 +32,7 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href=""
                 >
                   <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2">Login</span>
@@ -42,7 +42,7 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href=""
                 >
                   <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2">Contact</span>
