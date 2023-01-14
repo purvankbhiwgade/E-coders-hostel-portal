@@ -1,9 +1,6 @@
 import "../App.css";
 
-import React from "react";
-
-export default function Navbar({ fixed }) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+function Header() {
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-900 mb-3">
@@ -13,7 +10,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href=""
                 >
                   <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 text-2xl">Hostel VJTI</span>
@@ -23,8 +20,7 @@ export default function Navbar({ fixed }) {
           </div>
           <div
             className={
-              "w-1/2 lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
+              "w-1/2 lg:flex flex-grow items-center flex"
             }
             id="example-navbar-danger"
           >
@@ -32,7 +28,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href=""
                 >
                   <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2">Login</span>
@@ -42,7 +38,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href=""
                 >
                   <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2">Contact</span>
@@ -64,3 +60,5 @@ export default function Navbar({ fixed }) {
     </>
   );
 }
+
+export default Header;
