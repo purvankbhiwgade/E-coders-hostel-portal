@@ -5,9 +5,9 @@ import "../App.css";
 
 function Landing_page() {
   return (
-    <div style={{'height': '100%',
-      'display': 'flex',
-      'flex-direction': 'column'}}>
+    <div
+      style={{ height: "100%", display: "flex", "flex-direction": "column" }}
+    >
       <Header />
       <Body />
       <Footer />
